@@ -1,0 +1,71 @@
+
+body {
+    font-family: DialogInput, serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /*border: 3px solid pink;*/
+}
+
+.header {
+    /*border: 3px solid #c0fff6;*/
+    width: 100%;
+    background-color: #0a354b;
+    padding-top: 20px;
+    flex: 0 0 5em;
+
+}
+
+
+.container {
+    display: flex;
+    flex: auto;
+    /*border: 3px solid #ce2744;*/
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 101, 121);
+    flex-wrap: wrap;
+
+    /*overflow: auto;*/
+}
+
+.case {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+
+}
+
+.case-name{
+    font-size: 0.9em;
+}
+
+.case-image {
+    flex: 1 1 20em;
+    /*background-color: rgba(138, 222, 176, 0.98);*/
+    background: center / contain no-repeat url(../images/heroAyaka.png) ;
+}
+
+.footer {
+    /*border: 3px solid #5058f5;*/
+    flex: 0 0 8em;
+    width: 100%;
+    background-color: #0a354b;
+
+}
+
+@media (max-width: 640px) {
+    .case-image{
+        flex: 1 1 12em;
+    }
+}
+
+@media (max-width: 360px) {
+    .case-image {
+        flex: 1 1 10em;
+    }
+}
+
+
