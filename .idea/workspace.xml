@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d62fd90-ca9a-4f09-9449-ad3ba6a2fb51" name="Changes" comment="Поменяла название второго кейса">
+    <list default="true" id="7d62fd90-ca9a-4f09-9449-ad3ba6a2fb51" name="Changes" comment="Добавила крутилки и странички с кейсами">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pageAyaka.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pageAyaka.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +55,7 @@
       <workItem from="1681475383649" duration="4286000" />
       <workItem from="1681500348703" duration="2858000" />
       <workItem from="1681554054204" duration="9578000" />
-      <workItem from="1681719645301" duration="14121000" />
+      <workItem from="1681719645301" duration="14466000" />
     </task>
     <task id="LOCAL-00001" summary="Поменяла название второго кейса">
       <created>1680687631876</created>
@@ -69,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680687631876</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавила крутилки и странички с кейсами">
+      <created>1681771678373</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681771678373</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Поменяла название второго кейса" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поменяла название второго кейса" />
+    <MESSAGE value="Добавила крутилки и странички с кейсами" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавила крутилки и странички с кейсами" />
   </component>
 </project>
