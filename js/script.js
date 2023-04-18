@@ -1,28 +1,5 @@
 let modalWindow, closeButton;
 console.log("Сайт загружается 1 ")
-
-
-window.onload = () => {
-
-    modalWindow = document.querySelector('.modal-window');
-    closeButton = document.querySelector('.close-button');
-    closeButton.addEventListener('click', () => {
-        document.querySelector('.present-top').classList.remove("bounce-out-top")
-        document.querySelector('.present-light').classList.remove('present-light-on')
-        toggLeModal()
-    });
-    window.addEventListener('click', (event) => {
-        if (event.target === modalWindow) {
-            document.querySelector('.present-top').classList.remove("bounce-out-top")
-            document.querySelector('.present-light').classList.remove('present-light-on')
-            toggLeModal();
-        }
-    });
-
-
-}
-
-
 /****
  * Функция снизу делает тоже самое что и window.onload, но с использованием библиотеки jQuery
  * которую мы подключили в Html в теге <script>
@@ -76,7 +53,6 @@ jQuery(document).ready(($) => {
         // ставим выолнение по таймеру
         setTimeout(() => {
             toggLeModal()
-            e.target.src = link;
         }, 1300); //время через которое выполнится функция function
     });
 
@@ -95,24 +71,52 @@ jQuery(document).ready(($) => {
     });
 
     $('.stop-button').click((e) => {
-
         toggleButton(e.target);
-
-        $('.autoplay').slick('slickSetOption', {
-            'autoplay': false
-        }, true);
+        stopKrutki(e)
     });
 
     $('.play-button').click((e) => {
-
         toggleButton(e.target);
+        playKrutki()
+    });
 
-        let $autoplay = $('.autoplay');
+
+    modalWindow = document.querySelector('.modal-window');
+    $('.close-button').click(() => {
+        document.querySelector('.present-top').classList.remove("bounce-out-top")
+        document.querySelector('.present-light').classList.remove('present-light-on')
+        toggLeModal()
+        const redButton = document.querySelector('.redB');
+        redButton && redButton.classList.remove('redB')
         shuffleElements()
-        $autoplay.slick('slickSetOption', {
+        stopKrutki();
+    });
+
+    $(window).click((e) => {
+        if (e.target === modalWindow) {
+            document.querySelector('.present-top').classList.remove("bounce-out-top")
+            document.querySelector('.present-light').classList.remove('present-light-on')
+            toggLeModal();
+            const redButton = document.querySelector('.redB');
+            redButton && redButton.classList.remove('redB')
+            shuffleElements()
+            stopKrutki();
+
+        }
+    });
+
+    const playKrutki = () => {
+        shuffleElements()
+        $('.autoplay').slick('slickSetOption', {
             'autoplay': true
         }, true);
-    });
+    }
+
+    const stopKrutki = () => {
+        $('.autoplay').slick('slickSetOption', {
+            'autoplay': false
+        }, true);
+    }
 
     const shuffleElements = () => {
         log(document.querySelector('.autoplay'))
@@ -139,11 +143,11 @@ jQuery(document).ready(($) => {
         console.log(text);
     }
 
+    const toggLeModal = () => {
+        modalWindow.classList.toggle('show-modal-window');
+    }
 });
 
 
-const toggLeModal = () => {
-    modalWindow.classList.toggle('show-modal-window');
-}
 
 
