@@ -7,13 +7,13 @@ window.onload = () => {
     modalWindow = document.querySelector('.modal-window');
     closeButton = document.querySelector('.close-button');
     closeButton.addEventListener('click', () => {
-        document.querySelector('.present-top').classList.remove("puff-out-bottom")
+        document.querySelector('.present-top').classList.remove("bounce-out-top")
         document.querySelector('.present-light').classList.remove('present-light-on')
         toggLeModal()
     });
     window.addEventListener('click', (event) => {
         if (event.target === modalWindow) {
-            document.querySelector('.present-top').classList.remove("puff-out-bottom")
+            document.querySelector('.present-top').classList.remove("bounce-out-top")
             document.querySelector('.present-light').classList.remove('present-light-on')
             toggLeModal();
         }
@@ -50,7 +50,7 @@ jQuery(document).ready(($) => {
         //выводим событие
         console.log(e)
 
-        $('.present-top').addClass("puff-out-bottom");
+        $('.present-top').addClass("bounce-out-top");
         $('.present-light').addClass("present-light-on");
 
 
@@ -77,7 +77,7 @@ jQuery(document).ready(($) => {
         setTimeout(() => {
             toggLeModal()
             e.target.src = link;
-        }, 150); //время через которое выполнится функция function
+        }, 1300); //время через которое выполнится функция function
     });
 
     $('.autoplay').slick({
@@ -85,7 +85,7 @@ jQuery(document).ready(($) => {
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 0,
-        speed: 100,
+        speed: 50,
         easing: 'linear',
         cssEase: 'linear',
         arrows: false,
