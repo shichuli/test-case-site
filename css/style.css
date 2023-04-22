@@ -210,10 +210,14 @@ a {
     align-items: center;
 }
 .modal-window-content {
+
+    outline: 3px outset rgba(142,73,73, 1);
+    border: 3px ridge rgba(0,0,0,0.37);
+    border-radius: 40px 40px 40px 40px;
+    outline-offset: 4px;
     background-color: #321007;
     padding: 1rem 1.5rem;
     width: 38rem;
-    border-radius: 0.5rem;
 
     color: #FFF8DCFF;
     text-align: center;
