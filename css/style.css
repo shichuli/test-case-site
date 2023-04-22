@@ -334,9 +334,9 @@ a {
         height: 30em;
         width: 90%;
     }
-    .present-light {
-        width: 23em;
-    }
+        /*.present-light {*/
+        /*    width: 23em;*/
+        /*}*/
 }
 
 @media (max-width: 650px) {
@@ -372,9 +372,9 @@ a {
     .present-bottom {
         width: 22em;
     }
-    .present-light {
-        width: 20em;
-    }
+    /*.present-light {*/
+    /*    width: 20em;*/
+    /*}*/
 
 }
 
