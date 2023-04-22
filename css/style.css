@@ -156,7 +156,7 @@ a {
 .present-light{
     opacity: 0;
     width: 34em;
-    /*top: 3em;*/
+    top: 3em;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
