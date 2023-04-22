@@ -47,7 +47,7 @@ a {
 }
 
 .case-ayaka {
-    width: 40em;
+    width: 56em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,6 +68,17 @@ a {
     -webkit-border-radius: 107px 107px 0 0;
     -moz-border-radius: 107px 107px 0 0;
     /*overflow: auto;*/
+}
+
+.fon-page-case {
+    position: absolute;
+    margin-top: -10%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width: 98em;
 }
 
 .case {
@@ -107,6 +118,7 @@ a {
 
     text-shadow: 4px 5px 6px rgba(0,0,0,0.37);
     font-weight: 700;
+
 }
 .img-primogem-page {
     height: 25px;
@@ -124,10 +136,11 @@ a {
     -webkit-filter: drop-shadow(10px 20px 20px rgba(0, 0, 0, 0.88));
     filter: drop-shadow(8px 15px 8px rgba(0, 0, 0, 0.83));
     height: 45em;
-    margin-top: 5em;
+    margin-top: 8em;
 }
 
 .present-top{
+    position: relative;
     z-index: 2;
 }
 
@@ -298,6 +311,71 @@ a {
     .clickable-area {
         width: 55%;
     }
+    .present-top {
+        width: 30em;
+    }
+    .present-bottom {
+        width: 30em;
+    }
+    #present {
+        width: 90%;
+        height: 37em;
+    }
+}
+
+@media (max-width: 750px) {
+    .present-top {
+        width: 27em;
+    }
+    .present-bottom {
+        width: 27em;
+    }
+    #present {
+        height: 30em;
+        width: 90%;
+    }
+    .present-light {
+        width: 23em;
+    }
+}
+
+@media (max-width: 650px) {
+    #present {
+        width: 100%;
+    }
+    .present-top {
+        width: 25em;
+    }
+    .present-bottom {
+        width: 25em;
+    }
+    .modal-window-content {
+        width: 25em;
+    }
+    .carousel {
+        height: 10em;
+        font-size: 10px;
+    }
+    .buttons {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 560px) {
+    #present {
+        height: 25em;
+        width: 103%;
+    }
+    .present-top {
+        width: 22em;
+    }
+    .present-bottom {
+        width: 22em;
+    }
+    .present-light {
+        width: 20em;
+    }
+
 }
 
 @media (max-width: 540px) {
@@ -315,17 +393,27 @@ a {
     }
 
     .case-name-page {
-        width: 12em;
+        width: 13em;
     }
     .img-primogem {
         width: 10px;
         height: 10px;
     }
+    .carousel {
+        height: 12em;
+        font-size: 8px;
+    }
+    .buttons {
+        font-size: 10px;
+    }
+    /*.modal-window-content {*/
+    /*    width: 16em;*/
+    /*}*/
 }
 
 @media (max-width: 360px) {
     .case-name-page {
-        width: 10em;
+        width: 13em;
         font-size: 1em;
     }
 
