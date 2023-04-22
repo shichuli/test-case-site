@@ -67,18 +67,6 @@ a {
     border-radius: 107px 107px 0 0;
     -webkit-border-radius: 107px 107px 0 0;
     -moz-border-radius: 107px 107px 0 0;
-    /*overflow: auto;*/
-}
-
-.fon-page-case {
-    position: absolute;
-    margin-top: -10%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index: 0;
-    width: 98em;
 }
 
 .case {
@@ -137,6 +125,11 @@ a {
     filter: drop-shadow(8px 15px 8px rgba(0, 0, 0, 0.83));
     height: 45em;
     margin-top: 8em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .present-top{
@@ -146,28 +139,30 @@ a {
 
 .present-bottom {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
     z-index: 1;
 }
 
 .present-light{
     opacity: 0;
-    width: 34em;
-    top: 3em;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+    width: 34em;
 }
 
 .present-light-on{
     transition: opacity 2.8s ease-in-out;
     opacity: 1;
 
+}
+
+.fon-page-case {
+    bottom: 2em;
+    position: absolute;
+    z-index: 0;
+    width: 100em;
+}
+
+.paimonka{
+    bottom: 10em;
 }
 
 .case-image {
