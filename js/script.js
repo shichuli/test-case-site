@@ -22,7 +22,7 @@ jQuery(document).ready(($) => {
      * достаем элемент на который кликнули
      * используя ключевое слово target
      */
-    $("#present").click((e) => {
+    $(".present").click((e) => {
 
         //выводим событие
         console.log(e)
