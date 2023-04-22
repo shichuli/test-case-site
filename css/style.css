@@ -307,7 +307,7 @@ a {
 
 
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
     .clickable-area {
         width: 55%;
     }
@@ -323,7 +323,7 @@ a {
     }
 }
 
-@media (max-width: 750px) {
+@media screen and (max-width: 750px) {
     .present-top {
         width: 27em;
     }
@@ -339,7 +339,7 @@ a {
     }
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
     #present {
         width: 100%;
     }
@@ -361,7 +361,7 @@ a {
     }
 }
 
-@media (max-width: 560px) {
+@media screen and (max-width: 560px) {
     #present {
         height: 25em;
         width: 103%;
@@ -378,7 +378,7 @@ a {
 
 }
 
-@media (max-width: 540px) {
+@media screen and (max-width: 540px) {
     .clickable-area {
         width: 80%;
     }
@@ -411,7 +411,7 @@ a {
     /*}*/
 }
 
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
     .case-name-page {
         width: 13em;
         font-size: 1em;
